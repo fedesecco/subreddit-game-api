@@ -8,10 +8,9 @@ const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 
 const db = knex({
-  // connect to your own database here:
   client: 'pg',
   connection: {
-    host: process.env.DATABASE_URL,
+    connectionString: process.env.DATABASE_URL,
     ssl: 'true'
   }
 });
