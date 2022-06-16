@@ -18,6 +18,7 @@ const profile = require('./controllers/profile');
 const app = express();
 
 app.use(cors())
+
 app.get('/', (req, res) => { res.send('Working') })
 /* app.get('/', (req, res) => { res.send(db.users) }) 
 app.post('/signin', signin.handleSignin(db, bcrypt))
