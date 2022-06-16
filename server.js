@@ -7,13 +7,13 @@ const register = require('./controllers/register');
 const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 
-const db = knex({
+/* const db = knex({
   client: 'pg',
   connection: {
     connectionString: process.env.DATABASE_URL,
     ssl: 'true'
   }
-});
+}); */
 
 const app = express();
 
